@@ -1,5 +1,0 @@
-R_DEF: Internal format may change without notice
-local
-drawable dst
-drawable src
-string app_name
