@@ -17,6 +17,8 @@ public class CoinExplodeView extends View {
 
     private Bitmap[] mBitmaps = new Bitmap[23];
 
+    private CoinParticle[] particles;
+
     public CoinExplodeView(Context context) {
         super(context);
         init();
@@ -62,5 +64,7 @@ public class CoinExplodeView extends View {
         for (int i = 0; i < res.length; i++) {
             mBitmaps[i] = BitmapFactory.decodeResource(getResources(), res[i]);
         }
+
+        particles = new CoinParticle[60];
     }
 }

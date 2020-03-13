@@ -21,28 +21,14 @@ public class CircleImageView extends AppCompatImageView {
     private Xfermode mXfermodeDstOut;
     private Path mPath;
 
-    public CircleImageView(Context context) {
-        super(context);
-        init();
-    }
-
     public CircleImageView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init();
     }
 
-    public CircleImageView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-        init();
-    }
-
     private void init() {
-        // 禁止HW
-//        setLayerType(View.LAYER_TYPE_SOFTWARE, null);
-
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.FILTER_BITMAP_FLAG);
         mPaint.setStyle(Paint.Style.FILL);
-
         mXfermodeDstOut = new PorterDuffXfermode(PorterDuff.Mode.DST_OUT);
     }
 
