@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -18,9 +18,9 @@
         android:id="@+id/loading"
         android:layout_width="80dp"
         android:layout_height="80dp"
-        app:color="#4c91c0"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        app:circle_color="#4c91c0" />
 
     <Button
         android:id="@+id/btn_change_visibility"
@@ -29,4 +29,11 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:text="改变Visibility" />
+
+    <com.oynix.widget.JuhuaLoadingView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:juhua_color="#0000ff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
 </LinearLayout>

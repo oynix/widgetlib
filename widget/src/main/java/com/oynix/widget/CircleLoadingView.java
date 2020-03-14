@@ -42,7 +42,7 @@ public class CircleLoadingView extends View {
     public CircleLoadingView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.CircleLoadingView);
-        mColor = ta.getColor(R.styleable.CircleLoadingView_color, 0xff6ed88c);
+        mColor = ta.getColor(R.styleable.CircleLoadingView_circle_color, 0xff6ed88c);
         ta.recycle();
         init();
     }
