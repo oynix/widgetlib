@@ -118,5 +118,26 @@ public class JuhuaLoadingView extends View {
     @Override
     protected void onVisibilityChanged(@NonNull View changedView, int visibility) {
         mState = visibility == View.VISIBLE;
+        invalidate();
     }
+
+    /** 显示 */
+    public void show() {
+        if (getVisibility() != VISIBLE) {
+            setVisibility(VISIBLE);
+        }
+    }
+
+    /** 隐藏 */
+    public void hide() {
+        if (getVisibility() != GONE) {
+            setVisibility(GONE);
+        }
+    }
+
+    /** 是否显示 */
+    public boolean isShowing() {
+        return getVisibility() == VISIBLE;
+    }
+
 }
