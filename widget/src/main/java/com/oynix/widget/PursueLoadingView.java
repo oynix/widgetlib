@@ -175,4 +175,24 @@ public class PursueLoadingView extends View {
         }
         invalidate();
     }
+
+    /** 显示 */
+    public void show() {
+        if (getVisibility() != VISIBLE) {
+            setVisibility(VISIBLE);
+        }
+    }
+
+    /** 隐藏 */
+    public void hide() {
+        if (getVisibility() != GONE) {
+            setVisibility(GONE);
+        }
+    }
+
+    /** 是否显示 */
+    public boolean isShowing() {
+        return getVisibility() == VISIBLE;
+    }
+
 }
