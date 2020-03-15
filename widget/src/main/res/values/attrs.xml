@@ -7,4 +7,8 @@
     <declare-styleable name="JuhuaLoadingView">
         <attr name="juhua_color" format="color|reference" />
     </declare-styleable>
+
+    <declare-styleable name="PursueLoadingView">
+        <attr name="radian_color" format="color|reference" />
+    </declare-styleable>
 </resources>

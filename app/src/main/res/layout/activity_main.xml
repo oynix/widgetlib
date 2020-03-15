@@ -8,32 +8,30 @@
     tools:context=".MainActivity">
 
     <com.oynix.widget.CircleImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         android:background="#cccccc"
         android:src="@drawable/avatar" />
 
     <com.oynix.widget.CircleLoadingView
-        android:id="@+id/loading"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        app:circle_color="#4c91c0" />
-
-    <Button
-        android:id="@+id/btn_change_visibility"
-        android:layout_width="180dp"
-        android:layout_height="48dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp"
-        android:text="改变Visibility" />
+        app:circle_color="#4e87ed" />
 
     <com.oynix.widget.JuhuaLoadingView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:juhua_color="#0000ff"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        app:juhua_color="#db5140" />
+
+    <com.oynix.widget.PursueLoadingView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:radian_color="#f4bd42" />
 </LinearLayout>
